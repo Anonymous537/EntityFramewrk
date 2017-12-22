@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[Album](
+	[AlbumID] [int] NOT NULL,
+	[Name] [varchar](50) NOT NULL,
+	[Genre] [varchar](50) NOT NULL,
+	[Year] [datetime] NOT NULL,
+	[Price] [numeric](18, 0) NOT NULL,
+ CONSTRAINT [PK_Album] PRIMARY KEY CLUSTERED 
+(
+	[AlbumID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
